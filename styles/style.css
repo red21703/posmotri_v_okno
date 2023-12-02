@@ -69,7 +69,7 @@ ol {
   justify-content: space-between;
   align-items: flex-start;
   gap: 10px;
-  margin-block-start: 16px;
+  margin-top: 16px;
 }
 
 .search-form__fieldset-title {
@@ -116,6 +116,7 @@ ol {
 .search-form__label {
   display: inline-flex;
   align-items: center;
+  justify-content: flex-start;
   gap: 5px;
   cursor: pointer;
   inline-size: 100%;
@@ -293,7 +294,7 @@ input[type='checkbox']:checked + span {
 }
 
 .visually-hidden {
-  position: relative;
+  position: absolute;
   overflow: hidden;
   clip: rect(0 0 0 0);
   inline-size: 1px;
