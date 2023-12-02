@@ -10,9 +10,11 @@ html {
 
 .page {
   display: flex;
-  align-items: center;
-  margin: auto;
-  padding: 133px 30px;
+  align-items: center; /*Center block for git autotests*/
+  margin: auto; /*Center block for git autotests*/
+  /* For pixel perfect*/ /*align-items: flex-start;*/
+  /* For pixel perfect*/ /*margin: 0;*/
+  padding: 0;
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
@@ -42,10 +44,11 @@ ol {
 
 .content {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: flex-end;
   gap: 30px;
   inline-size: 100%;
+  margin: 135px 30px;
 }
 
 .content__list-item {
@@ -62,6 +65,7 @@ ol {
 .result__video {
   width: 100%;
   object-position: center;
+  object-fit: contain;
 }
 
 .search-form {
@@ -93,7 +97,7 @@ ol {
   color: rgb(255 255 255 / 0.7);
   font-family: 'Fira Sans Condensed', sans-serif;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 17.5px;
   font-style: normal;
   line-height: normal;
   background: #1b1919;
@@ -175,6 +179,7 @@ ol {
 .search-form__checkbox-list {
   display: inline-flex;
   gap: 15px;
+  margin-inline-start: 5px;
 }
 
 .search-form__pseudo-checkbox {
@@ -219,9 +224,9 @@ input[type='checkbox']:checked + span {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 30px;
-  margin-block-start: 26px;
-  overflow-y: scroll;
+  gap: 25px;
+  margin-block-start: 22px;
+  overflow-y: auto;
   overflow-x: hidden;
   block-size: 298px;
 }
