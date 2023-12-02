@@ -1,7 +1,4 @@
 .page {
-  justify-content: center;
-  align-items: center;
-  margin: 0;
   padding: 133px 30px;
 }
 
@@ -235,6 +232,10 @@ input[type='checkbox']:checked + span {
 
 .content__video-card-thumbnail {
   inline-size: 194px;
+}
+
+.content__card-link_current{
+  background: #545050;
 }
 
 .preloader-template {
